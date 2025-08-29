@@ -16,7 +16,11 @@
                     <ul class="blog-nav-posts">
                         {% assign year_posts = year.items %}
                         {% for post in year_posts %}
-                        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                        <li>
+                            <a href="{{ post.url | relative_url }}"{% if post.url == page.url %} class="current-post"{% endif %}>
+                                {{ post.title }}
+                            </a>
+                        </li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -25,7 +29,24 @@
             {% endif %}
 
             <main class="main-content">
-                {{ content }}
+                <article class="blog-post">
+                    <header class="post-header">
+                        <h1>{{ page.title }}</h1>
+                        <div class="post-meta">
+                            <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+                            {% if page.tags %}
+                            <span class="tags">
+                                {% for tag in page.tags %}
+                                <a href="/tags/{{ tag | slugify }}.html" class="tag">#{{ tag }}</a>
+                                {% endfor %}
+                            </span>
+                            {% endif %}
+                        </div>
+                    </header>
+                    <div class="post-content">
+                        {{ content }}
+                    </div>
+                </article>
             </main>
         </div>
 
