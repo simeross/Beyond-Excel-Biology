@@ -1,7 +1,6 @@
 # Site settings
 title: Beyond Excel Biology
 markdown: kramdown
-destination: ./site
 description: "A blog about biology, data analysis, and the tools that bridge them"
 url: "https://beyond-excel-biology.com"
 baseurl: ""
