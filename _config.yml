@@ -2,8 +2,8 @@
 title: Beyond Excel Biology
 markdown: kramdown
 description: "A blog about biology, data analysis, and the tools that bridge them"
-url: "https://beyond-excel-biology.com"
-baseurl: ""
+url: "https://simeross.github.io"
+baseurl: "/Beyond-Excel-Biology"
 author: "Simeon"
 excerpt_separator: "<!--more-->"
 
