@@ -5,20 +5,28 @@ date: 2025-08-29
 tags: [meta, introduction, biology, data-analysis]
 ---
 
-Welcome to Beyond Excel Biology, where we explore the intersection of biological research and modern data analysis tools.
+**🚧 This is a placeholder post for site development purposes.**
+
+Welcome to Beyond Excel Biology - a work-in-progress blog exploring the intersection of biological research and modern data analysis tools.
 
 <!--more-->
 
-As a biologist, I've often found myself wrestling with Excel spreadsheets, trying to coax meaningful insights from complex datasets. While Excel has its place, the world of biological research demands more sophisticated approaches to data analysis and visualization.
+## About This Site
 
-This blog will explore:
+This is currently a development version with placeholder content while I build out the site structure and begin writing actual posts.
+
+## Planned Topics
+
+Once live, this blog will explore:
 
 - **Modern data analysis tools** for biological research
-- **Reproducible research practices** using code and version control
-- **Data visualization techniques** that go beyond pie charts
+- **Reproducible research practices** using code and version control  
+- **Data visualization techniques** that go beyond spreadsheets
 - **Statistical methods** appropriate for biological datasets
-- **Integration of bioinformatics** into traditional wet lab workflows
+- **Integration of computational tools** into research workflows
 
-Whether you're a graduate student struggling with your first RNA-seq dataset or a seasoned researcher looking to modernize your analysis pipeline, you'll find something here.
+## Coming Soon
 
-Let's move beyond Excel and embrace the powerful tools that can transform how we understand biological data.
+Real content is coming soon! This placeholder will be replaced with actual insights, tutorials, and discussions about moving biological research beyond traditional spreadsheet limitations.
+
+*Stay tuned for updates as the site develops.*
