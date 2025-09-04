@@ -5,3 +5,5 @@ _site
 vendor
 
 personal_blog_templates/
+
+.obsidian/
