@@ -163,6 +163,9 @@ header {
     grid-template-columns: 220px 1fr;
     gap: 0;
     flex: 1;
+    /* Note: If pages grow and footer doesn't stay at bottom on long content,
+       uncomment the line below to force minimum height:
+       min-height: calc(100vh - 60px); */
 }
 
 .blog-navigator {
