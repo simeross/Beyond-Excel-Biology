@@ -19,5 +19,5 @@ Welcome to Beyond Excel Biology. I'm a plant pathologist and bioinformatician an
 - Productivity and efficiency tips that work for me and might work for you
 - Whatever I find fascinating, entertaining or worth sharing about research as a craft
 
-
+---
 *Come back for updates as the site develops. Subscribe to the [RSS feed](https://simeross.github.io/Beyond-Excel-Biology/feed.xml) to get notified of new posts.*
