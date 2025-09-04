@@ -1,34 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
 
 :root {
-    /* Catppuccin Mocha (Dark Mode) - Warm pastels */
-    --bg-primary: #1e1e2e;
-    --bg-secondary: #181825;
-    --bg-tertiary: #11111b;
-    --text-primary: #cdd6f4;
-    --text-secondary: #bac2de;
-    --text-muted: #6c7086;
-    --accent-blue: #74c7ec;
-    --accent-green: #a6e3a1;
-    --accent-purple: #cba6f7;
-    --accent-red: #f38ba8;
-    --accent-flamingo: #f2cdcd;
-    --accent-peach: #fab387;
-    --accent-rosewater: #f5e0dc;
-    --accent-pink: #f5c2e7;
-    --accent-sapphire: #209fb5;
-    --accent-lavender: #7287fd;
-    --accent-teal: #179299;
-
-    --border-color: #45475a;
-    --surface: #313244;
+    /* Nord Theme (Dark Mode) - Polar Night + Snow Storm + Frost + Aurora */
+    /* Polar Night - darker colors for backgrounds */
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
     
-    /* Semantic color mapping for dark mode (warm pastels) */
-    --primary-accent: var(--accent-peach);
-    --secondary-accent: var(--accent-flamingo);
-    --tertiary-accent: var(--accent-rosewater);
-    --interactive-accent: var(--accent-flamingo);
-    --highlight-accent: var(--accent-pink);
+    /* Snow Storm - bright colors for text */
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+    
+    /* Frost - bluish colors for accents */
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    
+    /* Aurora - colorful components */
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+
+    /* Base color assignments for dark mode */
+    --bg-primary: var(--nord0);
+    --bg-secondary: var(--nord1);
+    --bg-tertiary: var(--nord2);
+    --text-primary: var(--nord6);
+    --text-secondary: var(--nord5);
+    --text-muted: var(--nord3);
+    
+    --border-color: var(--nord3);
+    --surface: var(--nord2);
+    
+    /* Semantic color mapping for dark mode */
+    --primary-accent: var(--nord8);
+    --secondary-accent: var(--nord7);
+    --tertiary-accent: var(--nord9);
+    --interactive-accent: var(--nord8);
+    --highlight-accent: var(--nord10);
+    
+    /* Aurora colors for enhanced visual appeal */
+    --aurora-red: var(--nord11);      /* #bf616a - errors, attention */
+    --aurora-orange: var(--nord12);   /* #d08770 - warnings, special */
+    --aurora-yellow: var(--nord13);   /* #ebcb8b - highlights, warnings */
+    --aurora-green: var(--nord14);    /* #a3be8c - success, strings */
+    --aurora-purple: var(--nord15);   /* #b48ead - unique, numbers */
     
     /* Common values */
     --border-radius: 4px;
@@ -41,30 +62,31 @@
     --font-accent: 'Fira Code', monospace;
 }
 
-/* Light mode (Catppuccin Latte) */
+/* Light mode (Nord Theme - Snow Storm + Polar Night reversed) */
 [data-theme="light"] {
-    --bg-primary: #eff1f5;
-    --bg-secondary: #e6e9ef;
-    --bg-tertiary: #dce0e8;
-    --text-primary: #24273a;
-    --text-secondary: #4c4f69;
-    --text-muted: #6c6f85;
-    --accent-blue: #04a5e5;
-    --accent-green: #40a02b;
-    --accent-purple: #8839ef;
-    --accent-red: #d20f39;
-    --accent-sapphire: #209fb5;
-    --accent-lavender: #7287fd;
-    --accent-teal: #179299;
-    --border-color: #acb0be;
-    --surface: #ccd0da;
+    /* Base color assignments for light mode */
+    --bg-primary: var(--nord6);
+    --bg-secondary: var(--nord5);
+    --bg-tertiary: var(--nord4);
+    --text-primary: var(--nord0);
+    --text-secondary: var(--nord1);
+    --text-muted: var(--nord3);
+    --border-color: var(--nord4);
+    --surface: var(--nord5);
     
-    /* Semantic color mapping for light mode (cool pastels) */
-    --primary-accent: var(--accent-blue);
-    --secondary-accent: var(--accent-purple);
-    --tertiary-accent: var(--accent-green);
-    --interactive-accent: var(--accent-sapphire);
-    --highlight-accent: var(--accent-lavender);
+    /* Semantic color mapping for light mode */
+    --primary-accent: var(--nord10);
+    --secondary-accent: var(--nord9);
+    --tertiary-accent: var(--nord8);
+    --interactive-accent: var(--nord10);
+    --highlight-accent: var(--nord7);
+    
+    /* Aurora colors remain the same for light mode */
+    --aurora-red: var(--nord11);      
+    --aurora-orange: var(--nord12);   
+    --aurora-yellow: var(--nord13);   
+    --aurora-green: var(--nord14);    
+    --aurora-purple: var(--nord15);
 }
 
 * {
@@ -130,8 +152,8 @@ header {
 
 .theme-toggle {
     background: var(--bg-tertiary);
-    border: var(--border-width) solid var(--border-color);
-    color: var(--text-primary);
+    border: var(--border-width) solid var(--aurora-yellow);
+    color: var(--aurora-yellow);
     font-family: var(--font-main);
     font-size: 0.8rem;
     padding: 0.25rem 0.5rem;
@@ -146,7 +168,10 @@ header {
 }
 
 .theme-toggle:hover {
-    background: var(--surface);
+    background: var(--aurora-yellow);
+    color: var(--nord0);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(235, 203, 139, 0.3);
 }
 
 #theme-icon {
@@ -201,9 +226,23 @@ header {
 
 .blog-nav-year h4 {
     font-size: 0.8rem;
-    color: var(--primary-accent);
+    color: var(--aurora-green);
     margin-bottom: 0.5rem;
     font-weight: 500;
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+.blog-nav-year h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 60%;
+    background: var(--aurora-green);
+    border-radius: 2px;
 }
 
 .blog-nav-posts {
@@ -228,14 +267,15 @@ header {
 }
 
 .blog-nav-posts a:hover {
-    color: var(--interactive-accent);
-    border-left-color: var(--interactive-accent);
+    color: var(--aurora-orange);
+    border-left-color: var(--aurora-orange);
 }
 
 .blog-nav-posts a.current-post {
-    color: var(--tertiary-accent);
-    border-left-color: var(--tertiary-accent);
+    color: var(--aurora-purple);
+    border-left-color: var(--aurora-purple);
     font-weight: 600;
+    background: linear-gradient(90deg, transparent, rgba(180, 142, 173, 0.1));
 }
 
 /* Typography */
@@ -248,8 +288,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 1.1rem; }
-h2 { font-size: 1.05rem; color: var(--primary-accent); }
-h3 { font-size: 1rem; color: var(--secondary-accent); }
+h2 { font-size: 1.05rem; color: var(--aurora-green); }
+h3 { font-size: 1rem; color: var(--aurora-orange); }
 h4 { font-size: 0.95rem; }
 h5 { font-size: 0.9rem; }
 h6 { font-size: 0.85rem; }
@@ -277,12 +317,37 @@ a:hover {
     border-radius: var(--border-radius);
     padding: 1rem;
     margin-bottom: 1rem;
-    transition: border-color var(--transition-speed);
+    transition: all var(--transition-speed);
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-preview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, 
+        var(--aurora-purple) 0%, 
+        var(--aurora-green) 25%, 
+        var(--aurora-orange) 50%, 
+        var(--aurora-red) 75%, 
+        var(--aurora-yellow) 100%);
+    opacity: 0;
+    transition: opacity var(--transition-speed);
 }
 
 .blog-preview:hover {
     border-color: var(--primary-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(136, 192, 208, 0.2);
+}
+
+.blog-preview:hover::before {
+    opacity: 1;
 }
 
 .blog-preview h2 {
@@ -311,8 +376,9 @@ footer {
 .post-content code {
     font-family: var(--font-main);
     background: var(--bg-tertiary);
-    border: var(--border-width) solid var(--border-color);
+    border: var(--border-width) solid var(--aurora-purple);
     border-radius: var(--border-radius);
+    position: relative;
 }
 
 .post-content pre {
@@ -321,13 +387,28 @@ footer {
     font-size: 0.85rem;
 }
 
+.post-content pre::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        var(--aurora-purple), 
+        var(--aurora-green), 
+        var(--aurora-orange));
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
 .post-content code {
     padding: 0.2em 0.4em;
     font-size: 0.9em;
+    color: var(--aurora-green);
 }
 
 .post-content blockquote {
-    border-left: 3px solid var(--accent-blue);
+    border-left: 3px solid var(--nord8);
     padding-left: 1rem;
     margin: 1rem 0;
     color: var(--text-secondary);
@@ -416,22 +497,65 @@ footer {
 .tags {
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .tag {
-    color: var(--highlight-accent);
+    color: var(--aurora-purple);
     font-size: 0.7rem;
     text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--border-radius);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--aurora-purple);
+    transition: all var(--transition-speed);
 }
 
 .tag:hover {
-    color: var(--tertiary-accent);
+    color: var(--bg-primary);
+    background: var(--aurora-purple);
+    transform: translateY(-1px);
+}
+
+/* Alternate tag colors for variety */
+.tag:nth-child(2n) {
+    color: var(--aurora-green);
+    border-color: var(--aurora-green);
+}
+
+.tag:nth-child(2n):hover {
+    background: var(--aurora-green);
+}
+
+.tag:nth-child(3n) {
+    color: var(--aurora-orange);
+    border-color: var(--aurora-orange);
+}
+
+.tag:nth-child(3n):hover {
+    background: var(--aurora-orange);
+}
+
+.tag:nth-child(5n) {
+    color: var(--aurora-yellow);
+    border-color: var(--aurora-yellow);
+}
+
+.tag:nth-child(5n):hover {
+    background: var(--aurora-yellow);
+    color: var(--nord0);
 }
 
 .read-more {
-    color: var(--interactive-accent);
+    color: var(--aurora-red);
     font-size: 0.85rem;
     font-weight: 500;
+    transition: all var(--transition-speed);
+}
+
+.read-more:hover {
+    color: var(--aurora-yellow);
+    text-shadow: 0 0 8px rgba(235, 203, 139, 0.5);
 }
 
 .post-excerpt {
