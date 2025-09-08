@@ -1,1 +1,0 @@
-Work in plain text to use LLMs more efficiently - Markdown, CSV and YAML for beginners
