@@ -376,7 +376,7 @@ footer {
 .post-content code {
     font-family: var(--font-main);
     background: var(--bg-tertiary);
-    border: var(--border-width) solid var(--aurora-purple);
+    border: none;
     border-radius: var(--border-radius);
     position: relative;
 }
@@ -387,24 +387,10 @@ footer {
     font-size: 0.85rem;
 }
 
-.post-content pre::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, 
-        var(--aurora-purple), 
-        var(--aurora-green), 
-        var(--aurora-orange));
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
-}
-
 .post-content code {
     padding: 0.2em 0.4em;
     font-size: 0.9em;
-    color: var(--aurora-green);
+    color: var(--text-primary);
 }
 
 .post-content blockquote {
@@ -413,6 +399,46 @@ footer {
     margin: 1rem 0;
     color: var(--text-secondary);
     font-style: italic;
+}
+
+/* List and checkbox styling */
+.post-content ul {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.post-content ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+/* Interactive checkboxes */
+.post-content ul li input[type="checkbox"] {
+    margin-right: 0.5rem;
+    position: relative;
+    top: 0.1rem;
+    cursor: pointer;
+    accent-color: var(--aurora-green);
+}
+
+/* Hide bullet points for checkbox lists */
+.post-content ul li:has(input[type="checkbox"]) {
+    list-style: none;
+    margin-left: -1.2rem;
+}
+
+/* Alternative fallback for browsers that don't support :has() */
+.post-content .task-list-item {
+    list-style: none;
+    margin-left: -1.2rem;
+}
+
+.post-content .task-list-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    position: relative;
+    top: 0.1rem;
+    cursor: pointer;
+    accent-color: var(--aurora-green);
 }
 
 /* Blog preview metadata */

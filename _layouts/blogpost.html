@@ -80,6 +80,11 @@
             } else {
                 themeIcon.textContent = '🌙';
             }
+            
+            // Make checkboxes interactive by removing disabled attribute
+            document.querySelectorAll('input[type="checkbox"][disabled]').forEach(function(checkbox) {
+                checkbox.removeAttribute('disabled');
+            });
         });
     </script>
 </body>
