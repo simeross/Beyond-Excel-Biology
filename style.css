@@ -363,7 +363,7 @@ footer {
     border-top: var(--border-width) solid var(--border-color);
     padding: 1rem 1.5rem;
     font-size: 0.8rem;
-    color: var(--text-muted);
+    color: var(--aurora-orange);
     text-align: center;
 }
 
@@ -444,12 +444,16 @@ footer {
 /* Blog preview metadata */
 .post-meta {
     font-size: 0.75rem;
-    color: var(--text-muted);
+    color: var(--aurora-green);
     margin-bottom: 1rem;
     font-family: var(--font-main);
     display: flex;
     gap: 1rem;
     align-items: center;
+}
+
+.post-meta .reading-time {
+    color: var(--aurora-yellow);
 }
 
 /* Blog post header layout */
