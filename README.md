@@ -1,14 +1,10 @@
 # Beyond Excel Biology
 
-**⚠️ Work in Progress**
-
-This is a personal blog exploring biology, data analysis, and the tools that bridge scientific research with modern data science. 
-
-Currently under development with placeholder content while I build out the site structure and content.
+This is a personal blog exploring biology, data analysis, and the tools that bridge scientific research with modern data science.
 
 ## About
 
-A Jekyll-powered blog focusing on:
+A Hugo-powered blog focusing on:
 - Biological data analysis beyond Excel
 - Modern computational tools for biology
 - Bridging traditional biology with data science
@@ -16,11 +12,17 @@ A Jekyll-powered blog focusing on:
 ## Development
 
 ```bash
-bundle install
-bundle exec jekyll serve
+# Install Hugo (if not already installed)
+# See https://gohugo.io/installation/
+
+# Serve development site
+hugo server -D
+
+# Build for production
+hugo --gc --minify
 ```
 
-Built with Jekyll and deployed via GitHub Pages.
+Built with Hugo and deployed via GitHub Pages.
 
 ## License
 
