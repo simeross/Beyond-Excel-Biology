@@ -12,8 +12,9 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    style: github
+    style: ""
     lineNos: false
+    codeFences: false
 
 # Pagination
 pagination:
