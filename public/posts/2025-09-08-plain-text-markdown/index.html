@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plain text is pure power - Beyond Excel Biology</title>
+    <meta name="description" content="In this post, I explain the advantages of plain text files over proprietary file formats. Learning to work with plain text files is a fundamental step in …">
+    <link rel="stylesheet" href="/Beyond-Excel-Biology/style.css?v=1758008598">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧬%3C/text%3E%3C/svg%3E">
+    </head>
+<body>
+    <div class="container">
+        <header>
+    <div class="title-container">
+        <h1 class="site-title">
+            <a href="https://simeross.github.io/Beyond-Excel-Biology/">Beyond Excel Biology</a>
+        </h1>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">☀</span>
+    </button>
+</header>
+
+        <div class="content-wrapper">
+            
+            <nav class="blog-navigator">
+                <h3>Posts</h3>
+                
+                <div class="blog-nav-year">
+                    <h4>2025</h4>
+                    <ul class="blog-nav-posts">
+                        
+                        <li>
+                            <a href="/Beyond-Excel-Biology/posts/2025-09-11-obsidian/">
+                                Obsidian, a Markdown multitool
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="/Beyond-Excel-Biology/posts/2025-09-08-plain-text-markdown/" class="current-post">
+                                Plain text is pure power
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="/Beyond-Excel-Biology/posts/2025-09-04-welcome-to-beyond-excel-biology/">
+                                Welcome to Beyond Excel Biology
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </nav>
+            
+
+            <main class="main-content">
+                
+<article class="blog-post">
+    <header class="post-header">
+        <h1>Plain text is pure power</h1>
+        <div class="post-meta">
+            <time datetime="2025-09-08">2025-09-08</time>
+            
+            <span class="tags">
+                
+                <a href="/Beyond-Excel-Biology/tags/ai" class="tag">#AI</a>
+                
+                <a href="/Beyond-Excel-Biology/tags/markdown" class="tag">#markdown</a>
+                
+                <a href="/Beyond-Excel-Biology/tags/efficiency" class="tag">#efficiency</a>
+                
+            </span>
+            
+        </div>
+    </header>
+    <div class="post-content">
+        <p>In this post, I explain the advantages of plain text files over proprietary file formats. Learning to work with plain text files is a fundamental step in automating work and increasing efficiency. As a first example, I will demonstrate how to include formatting instructions in plain text with a formatting language called Markdown. Learning basic Markdown will enable you to format text without a software like Word and use large language models (LLMs) like ChatGPT to generate nicely formatted documents.</p>
+<h2 id="but-isnt-word-plain-text">But isn&rsquo;t Word plain text?</h2>
+<p>The most common way to write text in many work settings is to use a text editor like Word (.doc or .docx files) or Google Docs (cloud, no local files). To preserve formatting and styling of complex documents across devices, .pdf is another common file format. While &lsquo;<a href="https://en.wikipedia.org/wiki/Plain_text">plain text</a>&rsquo; can refer to various specific concepts, an approximate check of whether something is &lsquo;plain text&rsquo;, is whether it can be read by a human when opening it in a simple editor, e.g. Microsoft&rsquo;s Notepad, Apple&rsquo;s TextEdit or terminal tools like &lsquo;cat&rsquo;. PDF and old .doc files will yield unreadable nonsense and .docx files will likely crash or error out (they are compressed archives). In contrast, plain text files, for instance .txt or .csv, will be human-readable.</p>
+<p>Typically, files in programming languages, like .py (Python) and .R, and markup languages like .html or .tex (LaTeX) are also human-readable when opened in any text editor. I consider them &lsquo;plain text&rsquo; in this context, they pass the &lsquo;Notepad vibe check&rsquo;, but please note that markup languages can be argued to be a grey area. They consist of and are written as plain text, but viewed in the right program, they will display as formatted (&lsquo;rich&rsquo;) text.</p>
+<h2 id="why-is-plain-text-powerful">Why is plain text powerful?</h2>
+<p>So plain text can be opened in Notepad, TextEdit and the terminal. But you&rsquo;re probably not interested in working in Notepad. Quite the opposite, you are probably very used to working in a fully featured, enterprise-grade editing power tool like Word. You expect &lsquo;control + i&rsquo; to toggle italics mode and the ability to embed a table with a few mouse clicks. You depend on the editor&rsquo;s functions to maintain your productivity! Or so you think. And so Microsoft wants you to think. But maybe you also get annoyed frequently because Word insists on saving everything to the cloud and requires you to log in to do that. Or because it costs a subscription fee now (that your employer pays, if you are employed). Or because it takes what feels like half a minute to start up when you just want to draft a meeting note. The power of plain text is simplicity. Because it is plain:</p>
+<ul>
+<li>It is portable to any machine or program that reads text (<strong>Compatible</strong>)</li>
+<li>It is small in size - &ldquo;Hello world&rdquo; is 11 bytes in .txt and 13 000 bytes in .docx (<strong>Lightweight</strong>)</li>
+<li>It is directly human-readable without special software (<strong>Accessible</strong>)</li>
+<li>It is directly LLM-readable without special functions (<strong>Generatable</strong>)</li>
+<li>It can contain executable code (<strong>Executable</strong>)</li>
+<li>Two files are easily comparable with &lsquo;diff&rsquo; tools, more on that another time (<strong>Transparent</strong>)</li>
+<li>It can not be monopolized because it does not require special software to read (<strong>Free</strong>)</li>
+</ul>
+<h2 id="markdown---the-best-of-both-worlds">Markdown - the best of both worlds</h2>
+<p>While the two markup languages mentioned above, HTML and LaTeX, are incredibly potent and can do anything a word document can do and much more, they are also complex. They have a learning curve and usually distract with all kinds of possibilities that are not related to the text itself. Markdown, however is more like a minor, intuitive extension of plain text. When viewed &lsquo;plainly&rsquo; the formatting syntax does not distract from the content and there is practically no learning curve. It is probably apparent what this &lsquo;code&rsquo; is rendered to in a compatible viewer:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span># Lab Meeting - Sept 8
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>**Present:** [<span style="color:#0550ae">Chen</span>](<span style="color:#1f2328">https://www.reddit.com/r/ClaudeAI/comments/1gdgc3x/who_is_sarah_chen/</span>), Martinez, Kim
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>## Results
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">-</span> Batch 47: successful crystallization
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">-</span> *Contamination* suspected in trials 12-15
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">-</span> Spectroscopy data needs rerun
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>## Tasks
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">- [ ]</span> Martinez: fresh buffer prep
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">- [ ]</span> Kim: replicate binding assay
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>**Note:** <span style="color:#0a3069">`New centrifuge`</span> finally operational
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>While the exact way Markdown looks rendered depends on the platform, the &lsquo;code&rsquo; above encodes formatting. Explicitly, <code>#</code> is a level 1 headline, <code>##</code> a level 2 headline, <code>**text**</code> makes &rsquo;text&rsquo; bold, <code>*text*</code> becomes italicized, <code>[text](URL)</code> is a link:</p>
+<hr>
+<h1 id="lab-meeting---sept-8">Lab Meeting - Sept 8</h1>
+<p><strong>Present:</strong> <a href="https://www.reddit.com/r/ClaudeAI/comments/1gdgc3x/who_is_sarah_chen/">Chen</a>, Martinez, Kim</p>
+<h2 id="results">Results</h2>
+<ul>
+<li>Batch 47: successful crystallization</li>
+<li><em>Contamination</em> suspected in trials 12-15</li>
+<li>Spectroscopy data needs rerun</li>
+</ul>
+<h2 id="tasks">Tasks</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Martinez: fresh buffer prep</li>
+<li><input disabled="" type="checkbox"> Kim: replicate binding assay</li>
+</ul>
+<p><strong>Note:</strong> <code>New centrifuge</code> finally operational</p>
+<hr>
+<p>This is not supposed to be an exhaustive Markdown tutorial, rather an inspiring demonstration, but it also doesn&rsquo;t get much more complicated than that. Keep <a href="https://www.markdownguide.org/cheat-sheet/">this Markdown cheat sheet</a> handy as a reference when taking your first steps, you won&rsquo;t need it for very long.</p>
+<h2 id="how-to-use-markdown">How to use Markdown</h2>
+<p>Knowing Markdown will open up some minor features on diverse platforms, like formatting text in WhatsApp, Facebook Messenger, Reddit posts or similar. I use Markdown to write all my notes, simple reports, draft emails, letters and publications. For this I use <a href="https://obsidian.md/">Obsidian</a>, a highly recommended, free, lightweight program I wrote a <a href="/Beyond-Excel-Biology/2025/09/11/obsidian.html">separate post</a> about. I also do my data analysis in RMarkdown or its successor <a href="https://quarto.org/">Quarto</a>. I even used Markdown to write this blog post, <a href="https://gohugo.io/">Hugo</a> then built a web page from it.</p>
+<p>However, the main reason everyone should have basic familiarity with Markdown is that it makes it trivial to generate formatted documents with any LLM. Just ask your favourite model to <code>generate a lasagna shopping list with checkboxes in markdown</code> or <code>make a template for a digital lab book in markdown</code>. While LLMs are capable of producing HTML and LaTeX as well, the higher complexity of those languages usually means that the result will be less immediately accessible to you and has a higher chance of containing errors that require time fixing.</p>
+<h2 id="just-the-tip-of-the-plain-iceberg">Just the tip of the plain iceberg</h2>
+<p>Formatting text with Markdown might seem trivial, but I think it&rsquo;s a great illustration of the power of plain text. Using very simple syntax, Markdown frees formatted text from today&rsquo;s default, a walled garden of expensive software. This principle applies to tables and databases as well. YAML and CSV are simple and effective formats to save and transfer data (I will get back to these). And ultimately the largest efficiency gain, more accessible than ever with LLM assistance, is using plain text for scripting or programming.</p>
+<p>If you have not tried it, give Markdown a shot. It might not feel any special at first, but being able to format text without paying a subscription fee is kind of a superpower these days!</p>
+    </div>
+</article>
+
+            </main>
+        </div>
+
+        <footer>
+    <div>
+        <span>RSS: </span>
+        <a href="/Beyond-Excel-Biology/index.xml">blog</a>
+        <span style="float: right;">© 2025 Simeon</span>
+    </div>
+</footer>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (body.getAttribute('data-theme') === 'light') {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (savedTheme === 'light') {
+                document.body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀';
+            } else {
+                themeIcon.textContent = '🌙';
+            }
+            
+            
+            document.querySelectorAll('.blog-preview[data-post-url]').forEach(function(card) {
+                card.addEventListener('click', function(e) {
+                    
+                    if (e.target.tagName === 'A') {
+                        return;
+                    }
+                    
+                    
+                    const url = this.getAttribute('data-post-url');
+                    if (url) {
+                        window.location.href = url;
+                    }
+                });
+            });
+
+            
+            document.querySelectorAll('input[type="checkbox"][disabled]').forEach(function(checkbox) {
+                checkbox.removeAttribute('disabled');
+            });
+        });
+    </script>
+</body>
+</html>

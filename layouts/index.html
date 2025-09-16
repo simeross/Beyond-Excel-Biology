@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="blog-content">
+    <div class="blog-posts">
+        {{ range (where site.RegularPages "Type" "posts") }}
+        <article class="blog-preview" data-post-url="{{ .RelPermalink }}">
+            <h2 class="post-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <div class="post-meta">
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+                {{ with .Params.tags }}
+                <span class="tags">
+                    {{ range . }}
+                    <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">#{{ . }}</a>
+                    {{ end }}
+                </span>
+                {{ end }}
+                {{ $words := .Content | plainify | countwords }}
+                <span class="reading-time">{{ div $words 200 | add 1 }}min</span>
+            </div>
+            <div class="post-excerpt">
+                {{ if .Summary }}
+                    {{ .Summary }}
+                {{ else }}
+                    {{ .Content | plainify | truncate 400 }}
+                {{ end }}
+            </div>
+            <p>
+                <a href="{{ .RelPermalink }}" class="read-more">→ Continue reading</a>
+            </p>
+        </article>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

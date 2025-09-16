@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="blog-content">
+    <h2>{{ .Title }}</h2>
+    <p><a href="{{ .Site.BaseURL }}">← Back to home</a></p>
+    
+    <div class="tags-list">
+        {{ range .Data.Terms.Alphabetical }}
+        <a href="{{ .Page.RelPermalink }}" class="tag">#{{ .Page.Title }} ({{ .Count }})</a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

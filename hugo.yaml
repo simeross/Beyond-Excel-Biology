@@ -1,0 +1,50 @@
+baseURL: "https://simeross.github.io/Beyond-Excel-Biology"
+languageCode: "en-us"
+title: "Beyond Excel Biology"
+description: "A blog about biology, data analysis, and the tools that bridge them"
+
+author:
+  name: "Simeon"
+
+# Markdown settings
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: github
+    lineNos: true
+
+# Pagination
+pagination:
+  pagerSize: 10
+
+# Taxonomies (tags and categories)
+taxonomies:
+  tag: tags
+  category: categories
+
+# Menu configuration
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 10
+    - name: "About"
+      url: "/about/"
+      weight: 20
+
+# Output formats
+outputs:
+  home: ["HTML", "RSS"]
+  page: ["HTML"]
+
+# RSS feed settings
+params:
+  description: "A blog about biology, data analysis, and the tools that bridge them"
+  author: "Simeon"
+  posts_limit: 20
+
+# Build settings
+build:
+  writeStats: true

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" . }}
+<body>
+    <div class="container">
+        {{ partial "header.html" . }}
+
+        <div class="content-wrapper">
+            {{ if ne .Params.show_blog_nav false }}
+            <nav class="blog-navigator">
+                <h3>Posts</h3>
+                {{ range ((where site.RegularPages "Type" "posts").GroupByDate "2006") }}
+                <div class="blog-nav-year">
+                    <h4>{{ .Key }}</h4>
+                    <ul class="blog-nav-posts">
+                        {{ range .Pages }}
+                        <li>
+                            <a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $.RelPermalink }} class="current-post"{{ end }}>
+                                {{ .Title }}
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            </nav>
+            {{ end }}
+
+            <main class="main-content">
+                {{ block "main" . }}{{ end }}
+            </main>
+        </div>
+
+        {{ partial "footer.html" . }}
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (body.getAttribute('data-theme') === 'light') {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        // Apply saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (savedTheme === 'light') {
+                document.body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀';
+            } else {
+                themeIcon.textContent = '🌙';
+            }
+            
+            // Make blog cards clickable
+            document.querySelectorAll('.blog-preview[data-post-url]').forEach(function(card) {
+                card.addEventListener('click', function(e) {
+                    // Don't navigate if clicking on links
+                    if (e.target.tagName === 'A') {
+                        return;
+                    }
+                    
+                    // Navigate to post
+                    const url = this.getAttribute('data-post-url');
+                    if (url) {
+                        window.location.href = url;
+                    }
+                });
+            });
+
+            // Make checkboxes interactive by removing disabled attribute
+            document.querySelectorAll('input[type="checkbox"][disabled]').forEach(function(checkbox) {
+                checkbox.removeAttribute('disabled');
+            });
+        });
+    </script>
+</body>
+</html>
