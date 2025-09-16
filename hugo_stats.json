@@ -29,11 +29,9 @@
       "section",
       "span",
       "strong",
-      "table",
-      "td",
+      "style",
       "time",
       "title",
-      "tr",
       "ul"
     ],
     "classes": [
@@ -47,7 +45,6 @@
       "container",
       "content-wrapper",
       "current-post",
-      "highlight",
       "main-content",
       "post-content",
       "post-excerpt",
@@ -64,6 +61,7 @@
       "title-container"
     ],
     "ids": [
+      "about-beyond-excel-biology",
       "about-this-blog",
       "but-isnt-word-plain-text",
       "how-to-use-markdown",
@@ -73,7 +71,10 @@
       "planned-topics",
       "results",
       "tasks",
+      "technical-details",
+      "the-philosophy",
       "theme-icon",
+      "what-youll-find-here",
       "whats-in-it-for-non-cultists",
       "why-is-plain-text-powerful",
       "why-obsidian-beats-the-alternatives",

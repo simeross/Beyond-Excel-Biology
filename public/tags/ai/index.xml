@@ -32,41 +32,22 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;markdown---the-best-of-both-worlds&#34;&gt;Markdown - the best of both worlds&lt;/h2&gt;
 &lt;p&gt;While the two markup languages mentioned above, HTML and LaTeX, are incredibly potent and can do anything a word document can do and much more, they are also complex. They have a learning curve and usually distract with all kinds of possibilities that are not related to the text itself. Markdown, however is more like a minor, intuitive extension of plain text. When viewed &amp;lsquo;plainly&amp;rsquo; the formatting syntax does not distract from the content and there is practically no learning curve. It is probably apparent what this &amp;lsquo;code&amp;rsquo; is rendered to in a compatible viewer:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
-&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# Lab Meeting - Sept 8
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;**Present:** [&lt;span style=&#34;color:#0550ae&#34;&gt;Chen&lt;/span&gt;](&lt;span style=&#34;color:#1f2328&#34;&gt;https://www.reddit.com/r/ClaudeAI/comments/1gdgc3x/who_is_sarah_chen/&lt;/span&gt;), Martinez, Kim
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;## Results
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;-&lt;/span&gt; Batch 47: successful crystallization
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;-&lt;/span&gt; *Contamination* suspected in trials 12-15
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;-&lt;/span&gt; Spectroscopy data needs rerun
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;## Tasks
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;- [ ]&lt;/span&gt; Martinez: fresh buffer prep
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cf222e&#34;&gt;- [ ]&lt;/span&gt; Kim: replicate binding assay
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;**Note:** &lt;span style=&#34;color:#0a3069&#34;&gt;`New centrifuge`&lt;/span&gt; finally operational
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;While the exact way Markdown looks rendered depends on the platform, the &amp;lsquo;code&amp;rsquo; above encodes formatting. Explicitly, &lt;code&gt;#&lt;/code&gt; is a level 1 headline, &lt;code&gt;##&lt;/code&gt; a level 2 headline, &lt;code&gt;**text**&lt;/code&gt; makes &amp;rsquo;text&amp;rsquo; bold, &lt;code&gt;*text*&lt;/code&gt; becomes italicized, &lt;code&gt;[text](URL)&lt;/code&gt; is a link:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;# Lab Meeting - Sept 8
+
+**Present:** [Chen](https://www.reddit.com/r/ClaudeAI/comments/1gdgc3x/who_is_sarah_chen/), Martinez, Kim
+
+## Results
+- Batch 47: successful crystallization
+- *Contamination* suspected in trials 12-15
+- Spectroscopy data needs rerun
+
+## Tasks
+- [ ] Martinez: fresh buffer prep
+- [ ] Kim: replicate binding assay
+
+**Note:** `New centrifuge` finally operational
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;While the exact way Markdown looks rendered depends on the platform, the &amp;lsquo;code&amp;rsquo; above encodes formatting. Explicitly, &lt;code&gt;#&lt;/code&gt; is a level 1 headline, &lt;code&gt;##&lt;/code&gt; a level 2 headline, &lt;code&gt;**text**&lt;/code&gt; makes &amp;rsquo;text&amp;rsquo; bold, &lt;code&gt;*text*&lt;/code&gt; becomes italicized, &lt;code&gt;[text](URL)&lt;/code&gt; is a link:&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;lab-meeting---sept-8&#34;&gt;Lab Meeting - Sept 8&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Present:&lt;/strong&gt; &lt;a href=&#34;https://www.reddit.com/r/ClaudeAI/comments/1gdgc3x/who_is_sarah_chen/&#34;&gt;Chen&lt;/a&gt;, Martinez, Kim&lt;/p&gt;
@@ -85,7 +66,7 @@
 &lt;hr&gt;
 &lt;p&gt;This is not supposed to be an exhaustive Markdown tutorial, rather an inspiring demonstration, but it also doesn&amp;rsquo;t get much more complicated than that. Keep &lt;a href=&#34;https://www.markdownguide.org/cheat-sheet/&#34;&gt;this Markdown cheat sheet&lt;/a&gt; handy as a reference when taking your first steps, you won&amp;rsquo;t need it for very long.&lt;/p&gt;
 &lt;h2 id=&#34;how-to-use-markdown&#34;&gt;How to use Markdown&lt;/h2&gt;
-&lt;p&gt;Knowing Markdown will open up some minor features on diverse platforms, like formatting text in WhatsApp, Facebook Messenger, Reddit posts or similar. I use Markdown to write all my notes, simple reports, draft emails, letters and publications. For this I use &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt;, a highly recommended, free, lightweight program I wrote a &lt;a href=&#34;https://simeross.github.io/Beyond-Excel-Biology/2025/09/11/obsidian.html&#34;&gt;separate post&lt;/a&gt; about. I also do my data analysis in RMarkdown or its successor &lt;a href=&#34;https://quarto.org/&#34;&gt;Quarto&lt;/a&gt;. I even used Markdown to write this blog post, &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; then built a web page from it.&lt;/p&gt;
+&lt;p&gt;Knowing Markdown will open up some minor features on diverse platforms, like formatting text in WhatsApp, Facebook Messenger, Reddit posts or similar. I use Markdown to write all my notes, simple reports, draft emails, letters and publications. For this I use &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt;, a highly recommended, free, lightweight program I wrote a &lt;a href=&#34;https://simeross.github.io/Beyond-Excel-Biology/posts/2025-09-11-obsidian/&#34;&gt;separate post&lt;/a&gt; about. I also do my data analysis in RMarkdown or its successor &lt;a href=&#34;https://quarto.org/&#34;&gt;Quarto&lt;/a&gt;. I even used Markdown to write this blog post, &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; then built a web page from it.&lt;/p&gt;
 &lt;p&gt;However, the main reason everyone should have basic familiarity with Markdown is that it makes it trivial to generate formatted documents with any LLM. Just ask your favourite model to &lt;code&gt;generate a lasagna shopping list with checkboxes in markdown&lt;/code&gt; or &lt;code&gt;make a template for a digital lab book in markdown&lt;/code&gt;. While LLMs are capable of producing HTML and LaTeX as well, the higher complexity of those languages usually means that the result will be less immediately accessible to you and has a higher chance of containing errors that require time fixing.&lt;/p&gt;
 &lt;h2 id=&#34;just-the-tip-of-the-plain-iceberg&#34;&gt;Just the tip of the plain iceberg&lt;/h2&gt;
 &lt;p&gt;Formatting text with Markdown might seem trivial, but I think it&amp;rsquo;s a great illustration of the power of plain text. Using very simple syntax, Markdown frees formatted text from today&amp;rsquo;s default, a walled garden of expensive software. This principle applies to tables and databases as well. YAML and CSV are simple and effective formats to save and transfer data (I will get back to these). And ultimately the largest efficiency gain, more accessible than ever with LLM assistance, is using plain text for scripting or programming.&lt;/p&gt;

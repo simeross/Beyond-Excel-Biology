@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Beyond Excel Biology"
-date: 2025-08-29T00:00:00Z
+date: 2025-08-29
 tags:
   - meta
   - biology
