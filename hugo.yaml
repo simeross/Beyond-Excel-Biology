@@ -13,7 +13,7 @@ markup:
       unsafe: true
   highlight:
     style: github
-    lineNos: true
+    lineNos: false
 
 # Pagination
 pagination:
