@@ -14,7 +14,12 @@
         </div>
     </header>
     <div class="post-content">
-        {{ .Content }}
+        {{- $content := .Content -}}
+        {{- $content = $content | replaceRE `\[\[Plain Text Markdown\|([^\]]+)\]\]` `<a href="/Beyond-Excel-Biology/posts/plain-text-markdown/">$1</a>` -}}
+        {{- $content = $content | replaceRE `\[\[Plain Text Markdown\]\]` `<a href="/Beyond-Excel-Biology/posts/plain-text-markdown/">Plain Text Markdown</a>` -}}
+        {{- $content = $content | replaceRE `\[\[Obsidian\|([^\]]+)\]\]` `<a href="/Beyond-Excel-Biology/posts/obsidian/">$1</a>` -}}
+        {{- $content = $content | replaceRE `\[\[Obsidian\]\]` `<a href="/Beyond-Excel-Biology/posts/obsidian/">Obsidian</a>` -}}
+        {{ $content | safeHTML }}
     </div>
 </article>
 {{ end }}
