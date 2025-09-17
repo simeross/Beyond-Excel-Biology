@@ -15,10 +15,23 @@
     </header>
     <div class="post-content">
         {{- $content := .Content -}}
-        {{- $content = $content | replaceRE `\[\[Plain Text Markdown\|([^\]]+)\]\]` `<a href="/Beyond-Excel-Biology/posts/plain-text-markdown/">$1</a>` -}}
-        {{- $content = $content | replaceRE `\[\[Plain Text Markdown\]\]` `<a href="/Beyond-Excel-Biology/posts/plain-text-markdown/">Plain Text Markdown</a>` -}}
-        {{- $content = $content | replaceRE `\[\[Obsidian\|([^\]]+)\]\]` `<a href="/Beyond-Excel-Biology/posts/obsidian/">$1</a>` -}}
-        {{- $content = $content | replaceRE `\[\[Obsidian\]\]` `<a href="/Beyond-Excel-Biology/posts/obsidian/">Obsidian</a>` -}}
+        {{- $wikiLinkPattern := `\[\[([^\]]+)\]\]` -}}
+        {{- range $match := findRE $wikiLinkPattern $content -}}
+          {{- $linkContent := replaceRE `\[\[([^\]]+)\]\]` "$1" $match -}}
+          {{- $parts := split $linkContent "|" -}}
+          {{- $target := index $parts 0 -}}
+          {{- $displayText := cond (gt (len $parts) 1) (index $parts 1) $target -}}
+          
+          {{- $slug := $target | urlize -}}
+          {{- $page := $.Site.GetPage (printf "/posts/%s" $slug) -}}
+          {{- if $page -}}
+            {{- $replacement := printf `<a href="%s">%s</a>` $page.RelPermalink $displayText -}}
+            {{- $content = replace $content $match $replacement -}}
+          {{- else -}}
+            {{- $replacement := printf `<span class="broken-link" title="Page not found: %s">%s</span>` $target $displayText -}}
+            {{- $content = replace $content $match $replacement -}}
+          {{- end -}}
+        {{- end -}}
         {{ $content | safeHTML }}
     </div>
 </article>
