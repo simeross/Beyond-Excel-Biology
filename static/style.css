@@ -593,3 +593,69 @@ footer {
     margin-bottom: 1rem;
     line-height: 1.6;
 }
+
+/* Footnote styling */
+.footnotes {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.footnotes hr {
+    display: none; /* Hide the default HR that Hugo adds */
+}
+
+.footnotes ol {
+    margin-left: 1.5rem;
+    padding-left: 0;
+    line-height: 1.6;
+}
+
+.footnotes li {
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+
+.footnotes li::marker {
+    color: var(--aurora-green);
+    font-weight: 600;
+}
+
+.footnotes p {
+    margin: 0;
+    display: inline;
+}
+
+/* Footnote reference links in text */
+a[href^="#fn:"] {
+    color: var(--aurora-purple);
+    font-size: 0.8em;
+    font-weight: 600;
+    text-decoration: none;
+    vertical-align: super;
+    padding: 0 0.1em;
+    border-radius: 2px;
+    transition: all var(--transition-speed);
+}
+
+a[href^="#fn:"]:hover {
+    color: var(--bg-primary);
+    background: var(--aurora-purple);
+    text-decoration: none;
+}
+
+/* Footnote back-reference links */
+.footnotes a[href^="#fnref:"] {
+    color: var(--aurora-orange);
+    text-decoration: none;
+    margin-left: 0.5rem;
+    font-weight: 600;
+    transition: all var(--transition-speed);
+}
+
+.footnotes a[href^="#fnref:"]:hover {
+    color: var(--aurora-yellow);
+    text-shadow: 0 0 4px rgba(235, 203, 139, 0.5);
+}
