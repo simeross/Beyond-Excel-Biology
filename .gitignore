@@ -24,3 +24,5 @@ node_modules/
 
 # Keep .obsidian for personal notes
 # .obsidian/
+
+.obsidian/
